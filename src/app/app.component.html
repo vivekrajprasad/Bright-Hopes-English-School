@@ -1,2 +1,18 @@
-<app-list-employees></app-list-employees>
+<!DOCTYPE html>
+<div class="container">
+    <nav class="navbar navbar-dark">
+        <ul class="nav navbar-nav">
+            <li>
+                <a [routerLink]="['/list']" routerLinkActive="router-link-active">List</a>
+            </li>
+            <li>
+                <a [routerLink]="['/create']" routerLinkActive="router-link-active" >Create</a> 
+            </li>
+            <li>
+                <a [routerLink]="['/show']" routerLinkActive="router-link-active" >Show</a> 
+            </li>
+        </ul>
+    </nav>
+    <router-outlet></router-outlet>
+</div>
 

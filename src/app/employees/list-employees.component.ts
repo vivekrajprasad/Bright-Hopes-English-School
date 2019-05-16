@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Employee } from '../models/employee.model';
 
 @Component({
-  selector: 'app-list-employees',
+  // tslint:disable-next-line:component-selector
   templateUrl: './list-employees.component.html',
   styleUrls: ['./list-employees.component.css']
 })
@@ -41,7 +41,7 @@ export class ListEmployeesComponent implements OnInit {
       isActive: false,
       photoPath: 'assets/images/download.jpg'
     }
-  ]
+  ];
   constructor() { }
 
   ngOnInit() {
